@@ -46,7 +46,7 @@ int main(){
         printf("Wrong Input");
     }
 
-
     return 0;
+
 
 }
