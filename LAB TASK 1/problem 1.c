@@ -1,27 +1,22 @@
 /*
-The distance between Mirpur and Ashulia is input through the keyboard. Write a program to
-convert and print this distance in meter, feet, inches and centimeters.
+Niloy's basic salary is input through the keyboard. His dearness allowance is 40% of his basic
+salary and house rent is 20% of his basic salary. Write a program to calculate his gross salary.
 */
 
 #include <stdio.h>
 
 int main()
 {
-    float distanceInKm, distanceInMeter, distanceInFeet, distanceInInch, distanceInCentimeters;
+    float basic_salary, dearness_allowance, house_rent, gross_salary;
 
-    printf("Enter the distance between Mirpur and Asulia = ");
-    scanf("%f", &distanceInKm);
+    printf("Enter Basic Salary: ");
+    scanf("%f", &basic_salary);
 
-    distanceInMeter = distanceInKm * 1000;
-    distanceInFeet = distanceInKm * 3280.84;
-    distanceInInch = distanceInKm * 39370.1;
-    distanceInCentimeters = distanceInKm * 100000;
+    dearness_allowance = .4 * basic_salary;
+    house_rent = .2 * basic_salary;
 
-    printf("The distance is %.2f Kilometers\n", distanceInKm);
-    printf("The distance is %.2f Meter\n", distanceInMeter);
-    printf("The distance is %.2f Feet\n", distanceInFeet);
-    printf("The distance is %.2f Inches\n", distanceInInch);
-    printf("The distance is %.2f Centimeters\n", distanceInCentimeters);
+    gross_salary = basic_salary + dearness_allowance + house_rent;
 
+    printf("The gross salary of Niloy is %.2f", gross_salary);
     return 0;
 }

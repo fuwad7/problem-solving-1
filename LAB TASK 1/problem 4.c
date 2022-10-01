@@ -1,32 +1,30 @@
 /*
-The length & Width of a rectangle and radius of a circle are input through the keyboard. Write a program to calculate the area & perimeter of the rectangle, and the area & circumference of the circle.
+If the marks obtained by a student in five different subjects are input through the keyboard, find out the aggregate marks and percentage marks obtained by the student. Assume that the maximum marks that can be obtained by a student in each subject is 100.
 */
 
 #include <stdio.h>
 
 int main()
 {
-    float pi = 3.1416;
 
-    float rectLength, rectWidth, circleRadius, rectArea, rectParameter, circleArea, circleCircumference;
+    float stracturedProgramming, industry4, webDevEssential, english, artOfLiving, aggregatedMark, percentageMark;
 
-    printf("Enter the Length of Rectangle: ");
-    scanf("%f", &rectLength);
-    printf("Enter the Width of Rectangle: ");
-    scanf("%f", &rectWidth);
-    printf("Enter the Radius of a Circle: ");
-    scanf("%f", &circleRadius);
+    printf("Enter the mark of SP: ");
+    scanf("%f", &stracturedProgramming);
+    printf("Enter the mark of Industry 4.0: ");
+    scanf("%f", &industry4);
+    printf("Enter the mark of Web Development Essential: ");
+    scanf("%f", &webDevEssential);
+    printf("Enter the mark of English: ");
+    scanf("%f", &english);
+    printf("Enter the mark of Art of Living: ");
+    scanf("%f", &artOfLiving);
 
-    rectArea = rectLength * rectWidth;
-    rectParameter = 2 * (rectLength + rectWidth);
+    aggregatedMark = stracturedProgramming + industry4 + webDevEssential + english + artOfLiving;
+    percentageMark = aggregatedMark / 5;
 
-    circleArea = pi * circleRadius * circleRadius;
-    circleCircumference = 2 * pi * circleRadius;
-
-    printf("The area of rectangle is %.2f \n", rectArea);
-    printf("The parameter of rectangle is %.2f \n", rectParameter);
-    printf("The area of circle is %.2f \n", circleArea);
-    printf("The circumference of circle is %.2f \n", circleCircumference);
+    printf("Total mark is: %.2f \n", aggregatedMark);
+    printf("Percentage mark is: %.2f", percentageMark);
 
     return 0;
 }
