@@ -203,7 +203,7 @@ int authentication(){
     return flag;
 }
 
-// Functions of project management starts here
+// Functions of project management
 // project sub menu
 void projectMenu(){
     system("cls");
