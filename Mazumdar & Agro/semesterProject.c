@@ -1513,7 +1513,7 @@ void generateReport(){
     fflush(stdin);
     scanf("%d", &pId);
 
-    printf("\n\n\t\t\t***** Project Report *****\n\n");
+    printf("\n\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 PROJECT REPORT \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n");
 
     fileToOperate = fopen("expenseData.txt", "r");
     while (fread(&expenseInfo, sizeof(struct Expense), 1, fileToOperate))
@@ -1556,7 +1556,7 @@ void generateReport(){
     }
 
     redirReportSub: printf("\n\t\t\t1. Do You Want To Generate Report For Another Project?\n\t\t\t2. Main Menu\n\t\t\t3. Signout");
-    printf("\n\t\t\tEnter Your Choose: ");
+    printf("\n\n\t\t\tEnter Your Choice: ");
 
     int choice;
     scanf("%d",&choice);
@@ -1566,7 +1566,7 @@ void generateReport(){
         mainMenu();
     }else if(choice==3){
         system("cls");
-        printf("\n\n\t\t***** Thank You !! *****\n\n");
+        printf("\n\n\t\t***** The Program Is Closed *****\n\n");
         exit(0);
     }else{
         printf("\n\t\t\tInvalid Input! Please enter a valid choice");
@@ -1613,7 +1613,8 @@ void priceEstimate(){
 
     lossOrProfit = (totalExpenses + (totalExpenses*(percentage/100))) - totalSells;
 
-    printf("\n\n\t\t\t***** Price Estimation *****\n\n");
+    printf("\n\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 PRICE ESTIMATION \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n");
+
     printf("\n\tProject Id : %d\n", pId);
     printf("\n\tProject Total Sells Till Now : %.2f(BDT)\n", totalSells);
     printf("\n\tProject Total Expenses Till Now : %.2f(BDT)\n", totalExpenses);
@@ -1625,7 +1626,7 @@ void priceEstimate(){
     }
 
     redirReportSub: printf("\n\t\t\t1. Do You Want To Estimate Price For Another Project?\n\t\t\t2. Main Menu\n\t\t\t3. Signout");
-    printf("\n\t\t\tEnter Your Choose: ");
+    printf("\n\n\t\t\tEnter Your Choice: ");
 
     int choice;
     scanf("%d",&choice);
